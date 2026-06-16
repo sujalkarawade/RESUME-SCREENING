@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useContext } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
-import { Sparkles, LogOut, Menu, X } from 'lucide-react';
+import { LogOut, Menu, X } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -45,11 +45,8 @@ const Navbar = () => {
       <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
         <div className="container">
           {/* Brand */}
-          <Link to={user ? '/dashboard' : '/'} className="nav-brand">
-            <div className="nav-brand-icon">
-              <Sparkles size={16} color="white" />
-            </div>
-            RecruitPro
+          <Link to={user ? '/dashboard' : '/'} className="nav-brand" style={{ fontSize: '1.5rem', fontWeight: 800 }}>
+            HireFlow
           </Link>
 
           {/* Desktop nav */}

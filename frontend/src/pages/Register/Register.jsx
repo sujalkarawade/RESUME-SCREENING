@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
-import { Mail, Lock, Eye, EyeOff, User, AlertCircle, Sparkles, ArrowRight, Briefcase, UserCircle, CheckCircle } from 'lucide-react';
+import { Mail, Lock, Eye, EyeOff, User, AlertCircle, ArrowRight, Briefcase, UserCircle, CheckCircle } from 'lucide-react';
 import './Register.css';
 
 const getPasswordStrength = (pwd) => {
@@ -59,10 +59,7 @@ const Register = () => {
         <div className="register-brand-content">
 
           <div className="register-brand-logo">
-            <div className="register-brand-logo-icon">
-              <Sparkles size={18} color="white" />
-            </div>
-            <span className="register-brand-name">RecruitPro</span>
+            <span className="register-brand-name" style={{ fontSize: '2.25rem', fontWeight: 800 }}>HireFlow</span>
           </div>
 
           <h2 className="register-brand-headline">
@@ -70,7 +67,7 @@ const Register = () => {
             <span className="text-gradient">starts here.</span>
           </h2>
           <p className="register-brand-sub">
-            Free to join. Powerful from day one. Whether you're hiring or job hunting, RecruitPro has you covered.
+            Free to join. Powerful from day one. Whether you're hiring or job hunting, HireFlow has you covered.
           </p>
 
           <div className="register-perks">
@@ -90,7 +87,7 @@ const Register = () => {
 
           <div className="register-form-header">
             <h1 className="register-form-title">Create your account</h1>
-            <p className="register-form-sub">Join RecruitPro in under a minute</p>
+            <p className="register-form-sub">Join HireFlow in under a minute</p>
           </div>
 
           {error && (

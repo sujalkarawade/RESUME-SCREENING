@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
-import { Mail, Lock, Eye, EyeOff, AlertCircle, Sparkles, ArrowRight, BrainCircuit, Target, Users } from 'lucide-react';
+import { Mail, Lock, Eye, EyeOff, AlertCircle, ArrowRight, BrainCircuit, Target, Users } from 'lucide-react';
 import './Login.css';
 
 const PERKS = [
@@ -42,10 +42,7 @@ const Login = () => {
         <div className="login-brand-content">
 
           <div className="login-brand-logo">
-            <div className="login-brand-logo-icon">
-              <Sparkles size={18} color="white" />
-            </div>
-            <span className="login-brand-name">RecruitPro</span>
+            <span className="login-brand-name" style={{ fontSize: '2.25rem', fontWeight: 800 }}>HireFlow</span>
           </div>
 
           <h2 className="login-brand-headline">
@@ -53,7 +50,7 @@ const Login = () => {
             <span className="text-gradient">to hire talent.</span>
           </h2>
           <p className="login-brand-sub">
-            Join thousands of companies and candidates who rely on RecruitPro to make better hiring decisions.
+            Join thousands of companies and candidates who rely on HireFlow to make better hiring decisions.
           </p>
 
           <div className="login-perks">
@@ -73,7 +70,7 @@ const Login = () => {
 
           <div className="login-form-header">
             <h1 className="login-form-title">Welcome back</h1>
-            <p className="login-form-sub">Sign in to your RecruitPro account</p>
+            <p className="login-form-sub">Sign in to your HireFlow account</p>
           </div>
 
           {error && (
@@ -142,7 +139,7 @@ const Login = () => {
           </form>
 
           <div className="divider-with-text auth-divider">
-            <span>new to recruitpro?</span>
+            <span>new to hireflow?</span>
           </div>
 
           <Link to="/register" className="btn btn-outline btn-full" style={{ justifyContent: 'center' }}>

@@ -154,7 +154,7 @@ const Home = () => {
             <div className="cta-inner">
               <h2 className="cta-heading">Ready to transform your hiring?</h2>
               <p className="cta-sub">
-                Join hundreds of companies already using RecruitPro to find exceptional talent.
+                Join hundreds of companies already using HireFlow to find exceptional talent.
               </p>
               <div className="cta-actions">
                 <Link to="/register" className="btn btn-primary btn-lg">

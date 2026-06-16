@@ -1,7 +1,7 @@
-import React, { useContext, useState, useEffect, useRef } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import { Sparkles, LayoutDashboard, Briefcase, PlusCircle, ClipboardList, Calendar, LogOut, Menu, X } from 'lucide-react';
+import { LayoutDashboard, Briefcase, PlusCircle, ClipboardList, Calendar, LogOut, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
@@ -49,11 +49,8 @@ const Navbar = () => {
       <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
         <div className="container">
           {/* Brand */}
-          <Link to="/" className="nav-brand">
-            <div className="nav-brand-icon">
-              <Sparkles size={17} color="white" />
-            </div>
-            RecruitPro
+          <Link to="/" className="nav-brand" style={{ fontSize: '1.5rem', fontWeight: 800 }}>
+            HireFlow
           </Link>
 
           {/* Desktop Links */}

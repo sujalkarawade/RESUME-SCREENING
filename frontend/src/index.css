@@ -1,5 +1,5 @@
 /* ============================================================
-   RECRUIT PRO — PREMIUM DESIGN SYSTEM
+   HIREFLOW — PREMIUM DESIGN SYSTEM
    Stripe / Linear / Notion-quality aesthetics
    ============================================================ */
 
@@ -387,13 +387,6 @@ a:hover { color: var(--secondary-light); }
   transition: opacity var(--duration-fast);
 }
 .nav-brand:hover { opacity: 0.85; color: var(--text-1); }
-.nav-brand-icon {
-  width: 34px; height: 34px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dim));
-  border-radius: var(--radius-md);
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: var(--shadow-primary-sm);
-}
 
 .nav-links {
   display: flex;

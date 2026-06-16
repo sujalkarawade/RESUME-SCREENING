@@ -172,7 +172,7 @@ const Dashboard = () => {
         <div className="dashboard-header">
           <div>
             <h1 className="dashboard-welcome-title">
-              {greeting}, {user.full_name.split(' ')[0]}! 👋
+              {greeting}, {user.full_name.split(' ')[0]} !
             </h1>
             <p className="dashboard-welcome-sub">
               Here's what's happening with your{' '}
