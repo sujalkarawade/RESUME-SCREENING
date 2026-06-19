@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://hireflow-i4ft.onrender.com/api',
+  baseURL: 'https://hireflow-i4tf.onrender.com/api',
 });
 
 api.interceptors.request.use((config) => {
